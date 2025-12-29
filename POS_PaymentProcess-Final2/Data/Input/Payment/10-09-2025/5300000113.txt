@@ -1,0 +1,97 @@
+Report    : ZFIAPR039                                                                                     Date : 10.09.2025
+Report by : POC006                                      POS MALAYSIA BERHAD                               Time : 18:19:33
+                                        LAPORAN URUSNIAGA MENGIKUT NEGERI (MENGIKUT PRODUK)               Page : 1
+------------------------------------------------------------------------------------------------------------------------------------
+VENDOR           : 5300000113 PEJABAT TANAH DAN GALIAN SELANGOR
+KOD NEGERI       : 1001 hingga 1015
+BULAN            : NOVEMBER 2022
+KADAR KOMISEN    :       0.5000   / TRANSAKSI
+TARIKH TRANS.    : 01.11.2022 TO 30.11.2022
+PRODUK           : PEJABAT TANAH & GALIAN SELANGOR
+------------------------------------------------------------------------------------------------------------------------------------
+                                                                               JERNAL
+KOD  NAMA NEGER1             BIL.URUSNIAGA             AMAUN                  KREDIT                   DEBIT                   BAKI
+------------------------------------------------------------------------------------------------------------------------------------
+1015 Online                            1               50.00                    0.00                    0.00                  50.00
+
+JUMLAH                                 1               50.00                    0.00                    0.00                  50.00
+KOMISEN:                                                0.50
+JUMLAH JERNAL:                                                                  0.00                    0.00
+JUMLAH YANG PERLU DIBAYAR:                             49.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Report    : ZFIAPR039                                                                                     Date : 10.09.2025
+Report by : POC006                                      POS MALAYSIA BERHAD                               Time : 18:19:33
+                                        LAPORAN URUSNIAGA MENGIKUT NEGERI (MENGIKUT PRODUK)               Page : 2
+------------------------------------------------------------------------------------------------------------------------------------
+VENDOR           : 5300000113 PEJABAT TANAH DAN GALIAN SELANGOR
+KOD NEGERI       : 1001 hingga 1015
+BULAN            : NOVEMBER 2022
+KADAR KOMISEN    :       2.0000   / TRANSAKSI
+TARIKH TRANS.    : 01.11.2022 TO 30.11.2022
+PRODUK           : PEJABAT TANAH & GALIAN SELANGOR
+------------------------------------------------------------------------------------------------------------------------------------
+                                                                               JERNAL
+KOD  NAMA NEGER1             BIL.URUSNIAGA             AMAUN                  KREDIT                   DEBIT                   BAKI
+------------------------------------------------------------------------------------------------------------------------------------
+1004 Perak                             2              483.80                    0.00                    0.00                 483.80
+1005 Selangor                         62            5,603.35                    0.00                    0.00               5,603.35
+1006 Wilayah                          18            3,771.75                    0.00                    0.00               3,771.75
+
+JUMLAH                                82            9,858.90                    0.00                    0.00               9,858.90
+KOMISEN:                                              164.00
+JUMLAH JERNAL:                                                                  0.00                    0.00
+JUMLAH YANG PERLU DIBAYAR:                          9,694.90
+
+------------------------------------------------------------------------------------------------------------------------------------
+**JUMLAH BESAR                        83            9,908.90                    0.00                    0.00               9,908.90
+**JUMLAH BESAR KOMISEN:                               164.50
+**JUMLAH BESAR JERNAL:                                                          0.00                    0.00
+**JUMLAH BESAR PERLU DIBAYAR:                       9,744.40
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                       **** End of report ***

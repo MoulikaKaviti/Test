@@ -1,0 +1,30 @@
+Report    : ZFIAPR039                                                                                     Date : 31.08.2025
+Report by : POC006                                      POS MALAYSIA BERHAD                               Time : 01:22:56
+                                        LAPORAN URUSNIAGA MENGIKUT NEGERI (MENGIKUT PRODUK)               Page : 1
+------------------------------------------------------------------------------------------------------------------------------------
+VENDOR           : 5300000000 LEMBAGA AIR PERAK
+KOD NEGERI       : 1001 hingga 1015
+BULAN            : NOVEMBER 2022
+KADAR KOMISEN    :       0.7000   / TRANSAKSI
+TARIKH TRANS.    : 30.11.2022 TO 30.11.2022
+PRODUK           : KUTIPAN AIR-BIL AIR - LEMBAGA AIR PERAK
+------------------------------------------------------------------------------------------------------------------------------------
+                                                                               JERNAL
+KOD  NAMA NEGER1             BIL.URUSNIAGA             AMAUN                  KREDIT                   DEBIT                   BAKI
+------------------------------------------------------------------------------------------------------------------------------------
+1005 Selangor                          1               50.00                    0.00                    0.00                  50.00
+
+JUMLAH                                 1               50.00                    0.00                    0.00                  50.00
+KOMISEN:                                                0.70
+JUMLAH JERNAL:                                                                  0.00                    0.00
+JUMLAH YANG PERLU DIBAYAR:                             49.30
+
+------------------------------------------------------------------------------------------------------------------------------------
+**JUMLAH BESAR                         1               50.00                    0.00                    0.00                  50.00
+**JUMLAH BESAR KOMISEN:                                 0.70
+**JUMLAH BESAR JERNAL:                                                          0.00                    0.00
+**JUMLAH BESAR PERLU DIBAYAR:                          49.30
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                       **** End of report ***
