@@ -1,0 +1,302 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SAP_Navigate" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="In_TCode" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>SAP_Navigate_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="SAP_Navigate" sap:VirtualizedContainerService.HintSize="1468.8000000000002,571.2" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="vBoolIsAlreadyLoggedIn" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
+        <av:Point x:Key="ShapeLocation">135,15</av:Point>
+        <av:PointCollection x:Key="ConnectorLocation">184.6,39.8 214.6,39.8 214.6,40.2 255,40.2</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID4</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">255,5</av:Point>
+          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">365.4,40.2 435,40.2</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;The T-code navigation started&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">435,5</av:Point>
+              <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">545.4,40.2 615,40.2</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:RetryScope DisplayName="Retry -Naviagate to Home" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[CInt(In_config(&quot;RetryScope_RetryNumber&quot;).ToString)]">
+            <ui:RetryScope.ActivityBody>
+              <ActivityAction>
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="516.8,679.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="SAP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,619.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="9a0b8ce1-6fd7-43b0-86f7-972abd8794a1" Version="V2" WindowResize="Maximize">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,304.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9a0b8ce1-6fd7-43b0-86f7-972abd8794a1" Text="[In_TCode + &quot;[k(Enter)]&quot;]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable ContentHash="mXpsJ6KGfUS1blyWmNUtBQ" DesignTimeRectangle="70, 61, 181, 27" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="d9570747-7cb0-4449-ba20-3793e29f34a9" InformativeScreenshot="44efa7c678d36602c3d1eb2d193fba22.png" Reference="9YC7O3lZx0mHpBml0NlHAA/Vi3hSdkeP0-YbeTgW3RQog" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Material Document List' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-9, -9, 1938, 1048" ContentHash="Gk-GndhHx0GqtiCQ1TLUKw" FilePath="[In_Config(&quot;SAP_LogonPath&quot;).ToString]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMqSURBVFhH7ZZbSFNxHMenpplSEaQkeLTQNfdQGe0hh5kiXnoqKgksLQsfIrUiH9Kkeekhzct2MrxRO9vUzUuuTbzPa+bUOSm7KILEChuI+VSYC3/0P2fDG868HHEP5wPfx53/Z9////c/h8XAwMDAYOPohC7ugwV7PGwwh1AcWWNyfk+15PaoVJxoE6kg7ox2yS59MSqwym8SF3dWkyzO4C/sAyxPv+M5nKeDcFw9qyDier4qTvKpLbYlwVBRgwnJdRIp7JDUaI9dNiUYhjdCLRHbLUvjBHm7OzpRciQ7LeiVNwRnhO3zzdKLwx35HP6BvQ72FjUzC4K5euAKUc1FOjj3oh9FS1siC7UQKHwHPjm9gD3TLZMLE9X/rZdc0X0oO+ZrUVrOouAQXJCMwLBhBowzv2nN8Pgk3HvZDkcETQuC5EBE4Oo5ufhme10WO2hFb4ssFYySjoBh+hfQxfz8PBinZiClVAXcZClgWZ1oHZ25Obx+Tk7cap+Q80J5HFfzQKzGdgpOGqfhAa4A3/uvAMvUoPYGqfaCRG3wWhIzUPmYfTb81D6n/a4OFptV2A5BVBx8R3KJ+ZXgk1QC2JMuqjmMaq4B0EAMGuT+/niC9xpmFugWJLf1x9RPSCtVwtGEItRcG/Vs8swFi5pNdcTVAX0xh2dZ/v/QKWiWm4HUkjrgJJUCltFKNedNDYTqTw1xvbMm3S9gt6OdZfV1sFQwokwPKt0E9H1C+bjxdL8fh0elauDcRdsqaEZnboA6c2EitalCHN9BviE8Dy65hNfDoqAe2Ln9wM9uhsDMagjMqNpw+IIq8E0uR82hbc0ZBC/0p4NFLaAkot8qBEdDMDcn69NqjQVB8vJED8Sy+8Hzad+mQ/6euusouVZolEZ91hZyT7g621u76dZmmSBNIe859FViUkqie7TPucdr09mW1TYB3YLkQITjqtkKIr5DIWAHuzrbbWAiVoFOQbI58iqpIWI7xQ/ZmztzK9HIYgyRuAZOF/RsOefxN2ggrg1UZ/gFeLptcFqtMSYPLtdIY3pbpDe2nF7ZZaW+2I/n7LjFbWVgYGBgYKAJFusf6XLR6mcYw+QAAAAASUVORK5CYII=" InformativeScreenshot="16093a8155052e3b2a057253ae49e82f.png" Reference="9YC7O3lZx0mHpBml0NlHAA/5DVHObcGoUOf1-bhXmnsVQ" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;" Version="V1" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ui:RetryScope.ActivityBody>
+            <ui:RetryScope.Condition>
+              <ActivityFunc x:TypeArguments="x:Boolean">
+                <ui:UiElementExists DisplayName="Already LoggedIn" Exists="[vBoolIsAlreadyLoggedIn]" sap:VirtualizedContainerService.HintSize="516.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                  <ui:UiElementExists.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="26bd3a70-7dc8-42ce-915a-f4b68e3c591c" InformativeScreenshot="8cfaf1eaa6e05f16eb1a74eab6f852fd" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP*' /&gt;&lt;sap id='titl' text='SAP*' type='GuiTitlebar' /&gt;" TimeoutMS="[cint(In_config(&quot;Timeout_Medium&quot;).ToString)]">
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:UiElementExists.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:UiElementExists>
+              </ActivityFunc>
+            </ui:RetryScope.Condition>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:RetryScope>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">615,5</av:Point>
+                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">670.2,75.4 670.2,145</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Successfully navigated back to the SAP Home Page&quot;]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <FlowStep.Next>
+                <FlowStep x:Name="__ReferenceID1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">615,145</av:Point>
+                      <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">615,180.2 545.4,180.2</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Enter T-code" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.20000000000005,596" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="9a0b8ce1-6fd7-43b0-86f7-972abd8794a1" Version="V2" WindowResize="Maximize">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,304.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9a0b8ce1-6fd7-43b0-86f7-972abd8794a1" Text="[In_TCode + &quot;[k(Enter)]&quot;]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable ContentHash="mXpsJ6KGfUS1blyWmNUtBQ" DesignTimeRectangle="70, 61, 181, 27" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="d9570747-7cb0-4449-ba20-3793e29f34a9" InformativeScreenshot="44efa7c678d36602c3d1eb2d193fba22.png" Reference="9YC7O3lZx0mHpBml0NlHAA/Vi3hSdkeP0-YbeTgW3RQog" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Material Document List' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-9, -9, 1938, 1048" ContentHash="Gk-GndhHx0GqtiCQ1TLUKw" FilePath="[In_Config(&quot;SAP_LogonPath&quot;).ToString]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMqSURBVFhH7ZZbSFNxHMenpplSEaQkeLTQNfdQGe0hh5kiXnoqKgksLQsfIrUiH9Kkeekhzct2MrxRO9vUzUuuTbzPa+bUOSm7KILEChuI+VSYC3/0P2fDG868HHEP5wPfx53/Z9////c/h8XAwMDAYOPohC7ugwV7PGwwh1AcWWNyfk+15PaoVJxoE6kg7ox2yS59MSqwym8SF3dWkyzO4C/sAyxPv+M5nKeDcFw9qyDier4qTvKpLbYlwVBRgwnJdRIp7JDUaI9dNiUYhjdCLRHbLUvjBHm7OzpRciQ7LeiVNwRnhO3zzdKLwx35HP6BvQ72FjUzC4K5euAKUc1FOjj3oh9FS1siC7UQKHwHPjm9gD3TLZMLE9X/rZdc0X0oO+ZrUVrOouAQXJCMwLBhBowzv2nN8Pgk3HvZDkcETQuC5EBE4Oo5ufhme10WO2hFb4ssFYySjoBh+hfQxfz8PBinZiClVAXcZClgWZ1oHZ25Obx+Tk7cap+Q80J5HFfzQKzGdgpOGqfhAa4A3/uvAMvUoPYGqfaCRG3wWhIzUPmYfTb81D6n/a4OFptV2A5BVBx8R3KJ+ZXgk1QC2JMuqjmMaq4B0EAMGuT+/niC9xpmFugWJLf1x9RPSCtVwtGEItRcG/Vs8swFi5pNdcTVAX0xh2dZ/v/QKWiWm4HUkjrgJJUCltFKNedNDYTqTw1xvbMm3S9gt6OdZfV1sFQwokwPKt0E9H1C+bjxdL8fh0elauDcRdsqaEZnboA6c2EitalCHN9BviE8Dy65hNfDoqAe2Ln9wM9uhsDMagjMqNpw+IIq8E0uR82hbc0ZBC/0p4NFLaAkot8qBEdDMDcn69NqjQVB8vJED8Sy+8Hzad+mQ/6euusouVZolEZ91hZyT7g621u76dZmmSBNIe859FViUkqie7TPucdr09mW1TYB3YLkQITjqtkKIr5DIWAHuzrbbWAiVoFOQbI58iqpIWI7xQ/ZmztzK9HIYgyRuAZOF/RsOefxN2ggrg1UZ/gFeLptcFqtMSYPLtdIY3pbpDe2nF7ZZaW+2I/n7LjFbWVgYGBgYKAJFusf6XLR6mcYw+QAAAAASUVORK5CYII=" InformativeScreenshot="16093a8155052e3b2a057253ae49e82f.png" Reference="9YC7O3lZx0mHpBml0NlHAA/5DVHObcGoUOf1-bhXmnsVQ" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;" Version="V1" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">435,145</av:Point>
+                          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">736.0000000000001,110.62 736.0000000000001,180.22</av:PointCollection>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Successfully navigated to the SAP &quot;+In_TCode+&quot; Page&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                    </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowStep.Next>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+  </Flowchart>
+</Activity>

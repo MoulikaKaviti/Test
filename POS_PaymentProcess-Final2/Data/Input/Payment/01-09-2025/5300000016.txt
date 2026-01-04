@@ -1,0 +1,95 @@
+Report    : ZFIAPR039                                                                                     Date : 01.09.2025
+Report by : POC006                                      POS MALAYSIA BERHAD                               Time : 20:31:11
+                                        LAPORAN URUSNIAGA MENGIKUT NEGERI (MENGIKUT PRODUK)               Page : 1
+------------------------------------------------------------------------------------------------------------------------------------
+VENDOR           : 5300000016 RANHILL SAJ SDN BHD
+KOD NEGERI       : 1001 hingga 1015
+BULAN            : NOVEMBER 2022
+KADAR KOMISEN    :       1.0000   / TRANSAKSI
+TARIKH TRANS.    : 23.11.2022 TO 23.11.2022
+PRODUK           : KUTIPAN BIL AIR -SAJ HOLDINGS SDN BHD
+------------------------------------------------------------------------------------------------------------------------------------
+                                                                               JERNAL
+KOD  NAMA NEGER1             BIL.URUSNIAGA             AMAUN                  KREDIT                   DEBIT                   BAKI
+------------------------------------------------------------------------------------------------------------------------------------
+1008 Melaka                           14              397.20                    0.00                    0.00                 397.20
+1009 Johor                         4,439          202,612.00                    0.00                    0.00             202,612.00
+
+JUMLAH                             4,453          203,009.20                    0.00                    0.00             203,009.20
+KOMISEN:                                            4,453.00
+JUMLAH JERNAL:                                                                  0.00                    0.00
+JUMLAH YANG PERLU DIBAYAR:                        198,556.20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Report    : ZFIAPR039                                                                                     Date : 01.09.2025
+Report by : POC006                                      POS MALAYSIA BERHAD                               Time : 20:31:11
+                                        LAPORAN URUSNIAGA MENGIKUT NEGERI (MENGIKUT PRODUK)               Page : 2
+------------------------------------------------------------------------------------------------------------------------------------
+VENDOR           : 5300000016 RANHILL SAJ SDN BHD
+KOD NEGERI       : 1001 hingga 1015
+BULAN            : NOVEMBER 2022
+KADAR KOMISEN    :       0.7000   / TRANSAKSI
+TARIKH TRANS.    : 23.11.2022 TO 23.11.2022
+PRODUK           : RANHILL SAJ SDN BHD - WATER
+------------------------------------------------------------------------------------------------------------------------------------
+                                                                               JERNAL
+KOD  NAMA NEGER1             BIL.URUSNIAGA             AMAUN                  KREDIT                   DEBIT                   BAKI
+------------------------------------------------------------------------------------------------------------------------------------
+1015 Online                            2              692.84                    0.00                    0.00                 692.84
+
+JUMLAH                                 2              692.84                    0.00                    0.00                 692.84
+KOMISEN:                                                1.40
+JUMLAH JERNAL:                                                                  0.00                    0.00
+JUMLAH YANG PERLU DIBAYAR:                            691.44
+
+------------------------------------------------------------------------------------------------------------------------------------
+**JUMLAH BESAR                     4,455          203,702.04                    0.00                    0.00             203,702.04
+**JUMLAH BESAR KOMISEN:                             4,454.40
+**JUMLAH BESAR JERNAL:                                                          0.00                    0.00
+**JUMLAH BESAR PERLU DIBAYAR:                     199,247.64
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                       **** End of report ***
